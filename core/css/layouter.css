@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+.main-panel, .main-panel *{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+.main-panel {height:100%;}
+
+.main-panel .top-panel,
+.main-panel .bottom-panel {width:100%}
+.main-panel .top-panel {height:50%; background-color:#DDD;}
+.main-panel .bottom-panel {height:50%; background-color:#AAA;}
+
+.main-panel .leftward-panel,
+.main-panel .rightward-panel {height:100%; display:inline-block;}
+.main-panel .leftward-panel {width:50%; background-color:#abc; float:left;}
+.main-panel .rightward-panel {width:50%; background-color:#cba;}

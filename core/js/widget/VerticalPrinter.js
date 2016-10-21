@@ -20,13 +20,14 @@ function VerticalPrinter(layouter, mainContainer) {
 
   /**
    * 设置左侧宽度
-   * @param width {Number} 左侧宽度, 0.1~1.0使用百分比, 大于1使用像素
+   * @param width {Number} 左侧宽度, 0.1~1.0使用百分比
    * @returns {VerticalPrinter}
    */
   this.setLeftwardWidth = function(width) {
     var wVal        = parseFloat(width),
         usePercent  = (0<=wVal && wVal<=1),
-        unit        = usePercent?"%":"px",
+        unit        = "%",
+//        unit        = usePercent?"%":"px",
         leftVal     = wVal,
         rightVal    = _conf.spliterCtnr.width()-wVal;
 

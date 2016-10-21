@@ -17,17 +17,17 @@ function HorizontalPrinter(layouter) {
                     bottom      : null
                   };
   $thisObj.conf = _conf;
-  
 
   /**
    * 设置水平分割
-   * @param height {Float} 顶部容器高度, 0.0~1.0之间表示百分比, 大于1使用像素表示
+   * @param height {Float} 顶部容器高度, 0.0~1.0之间表示百分比
    * @returns {Printer}
    */
   this.setUpperHeight = function(height) {
     var hVal        = parseFloat(height),
         usePercent  = (0<=hVal && hVal<=1),
-        unit        = usePercent?"%":"px",
+        unit        = "%",
+//        unit        = usePercent?"%":"px",
         topVal      = hVal,
         bottomVal   = _conf.spliterCtnr.height()-hVal;
 

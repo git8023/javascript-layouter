@@ -42,7 +42,7 @@ function TestFn(debug) {
   function setLayout() {
     var layouter  = new Layouter(baseCtnr),
         hPrinter  = layouter.getHorizontalPrinter();
-    hPrinter.setUpperHeight(0.2);
+    hPrinter.setUpperHeight(0.1);
 
     var $bottom   = hPrinter.conf.bottom,
         vPrinter  = layouter.getVerticalPrinter($bottom);
